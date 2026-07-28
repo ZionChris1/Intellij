@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                  <Button mnemonicParsing="false" text="Play/Pause" />
+                  <Button mnemonicParsing="false" text="Reset" />
+                  <Button mnemonicParsing="false" text="Join as prey" />
+                  <Button mnemonicParsing="false" text="Join as predator" />
+                  <Button mnemonicParsing="false" text="Admin login" />
+              </buttons>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="331.0" prefWidth="398.0">
+               <children>
+                  <Circle fill="#1f56ff" layoutX="110.0" layoutY="78.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#c30000" layoutX="248.0" layoutY="150.0" radius="42.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="264.0" layoutY="132.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="264.0" layoutY="132.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="126.0" layoutY="64.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="126.0" layoutY="86.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="WHITE" layoutX="240.0" layoutY="132.0" radius="8.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="240.0" layoutY="132.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="126.0" layoutY="64.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle layoutX="126.0" layoutY="86.0" radius="4.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+   <right>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <content>
+            <VBox prefHeight="323.0" prefWidth="199.0">
+               <children>
+                  <HBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Target ticks per second" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Initial Prey" />
+                        <TextField text="1" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Initial predators" />
+                        <TextField text="1" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="60.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Max prey" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="85.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Max predators" />
+                        <TextField />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="85.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Simulation x size" />
+                        <TextField text="100" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="110.0">
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="203.0" text="Simulation y size" />
+                        <TextField text="100" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </right>
+   <bottom>
+      <Label text="Simulation paused" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
